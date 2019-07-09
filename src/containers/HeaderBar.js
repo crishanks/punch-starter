@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //Components
 import LinkButton from '../components/LinkButton';
+import ProfileImage from '../components/ProfileImage';
 
 //Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -20,11 +21,12 @@ export default class HeaderBar extends Component {
           <LinkButton title="Start a project" link="/"/>
         </div>
         <div>
-          <h1>PunchStarter</h1>
+          <h2>PunchStarter</h2>
         </div>
         <div>
           <p>Search</p>
           <FontAwesomeIcon icon={faSearch}/>
+          <ProfileImage image={"../src/assets/images/gorilla.png"}/>
         </div>
       </div>
     );
