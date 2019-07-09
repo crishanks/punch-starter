@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-link-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=App.css.map */

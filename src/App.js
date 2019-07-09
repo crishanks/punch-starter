@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../src/sass/App.css';
 
 //React Router
 import { Switch, Route } from 'react-router-dom';

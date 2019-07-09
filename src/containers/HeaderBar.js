@@ -16,14 +16,14 @@ export default class HeaderBar extends Component {
   render() {
     return (
       <div className="header-bar">
-        <div>
+        <div className="header-link-buttons">
           <LinkButton title="Explore" link="/"/>
           <LinkButton title="Start a project" link="/"/>
         </div>
         <div>
           <h2>PunchStarter</h2>
         </div>
-        <div>
+        <div className="header-search-profile">
           <p>Search</p>
           <FontAwesomeIcon icon={faSearch}/>
           <ProfileImage image={"../src/assets/images/gorilla.png"}/>
