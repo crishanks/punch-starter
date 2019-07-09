@@ -6,12 +6,14 @@ import { Switch, Route } from 'react-router-dom';
 
 //Components
 import Home from '../src/containers/Home';
+import HeaderBar from '../src/containers/HeaderBar';
 
 function App() {
   return (
     <div className="App">
+      <HeaderBar/>
       <Switch>
-        <Route exact path='/' component={Home}/>
+        <Route path='/' component={Home}/>
       </Switch>
     </div>
   );
