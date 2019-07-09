@@ -23,10 +23,12 @@ export default class HeaderBar extends Component {
         <div className="logo">
           <h2>punchstarter</h2>
         </div>
-        <div className="header-search-profile">
-          <p>Search</p>
-          <FontAwesomeIcon className="icon" icon={faSearch}/>
-          <ProfileImage className="profile-image" image={"../src/assets/images/gorilla.png"}/>
+        <div className="header-search-profile-container">
+          <div className="header-search">
+            <p>Search</p>
+            <FontAwesomeIcon className="icon" icon={faSearch}/>
+          </div>
+          <ProfileImage className="profile-image" image={"https://img.jakpost.net/c/2018/11/28/2018_11_28_59557_1543397471._large.jpg"}/>
         </div>
       </div>
     );

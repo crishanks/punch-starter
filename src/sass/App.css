@@ -1,9 +1,10 @@
 .App {
   text-align: center;
 }
-.App p, .App div {
+.App p, .App div, .App a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  color: #333745;
 }
 
 .header-bar {
@@ -15,17 +16,27 @@
 .header-bar .logo {
   font-family: "Quicksand", sans-serif;
   color: #256EFF;
+  font-size: 110%;
 }
 
-.header-search-profile {
+.header-search-profile-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 20%;
 }
-.header-search-profile .profile-image {
-  padding-left: 15px;
-  border-radius: 5%;
+.header-search-profile-container .header-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-search-profile-container .header-search p {
+  padding-right: 8px;
+}
+.header-search-profile-container .profile-image img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .header-link-buttons {
