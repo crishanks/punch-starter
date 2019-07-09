@@ -20,10 +20,8 @@
 .header-search-profile {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.header-search-profile .icon {
-  padding-left: 10px;
+  justify-content: space-evenly;
+  width: 20%;
 }
 .header-search-profile .profile-image {
   padding-left: 15px;
@@ -33,12 +31,10 @@
 .header-link-buttons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 20%;
 }
 
-.link-button:nth-child(2) {
-  padding-left: 10px;
-}
 .link-button a {
   color: #333745;
   text-decoration: none;
