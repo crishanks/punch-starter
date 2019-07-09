@@ -1,16 +1,49 @@
+//Variables
+$blue: #256EFF
+$green: #61e786
+$black: #333745
+
+//Global Styles  
 .App
   text-align: center
+  p, div
+    font-family: 'Roboto', sans-serif
+    font-size: 14px
 
+//Header Bar
 .header-bar
   display: flex
   justify-content: space-between
+  border-bottom: 1px solid #e8e8e8
+  padding: 0 25px
+  .logo
+    font-family: 'Quicksand', sans-serif
+    color: $blue
 
 .header-search-profile
   display: flex
   align-items: center
   justify-content: space-between
+  .icon
+    padding-left: 10px
+  .profile-image
+    padding-left: 15px
+    border-radius: 5%
 
 .header-link-buttons
   display: flex
   align-items: center
   justify-content: space-between
+
+//Link Buttons
+.link-button 
+  &:nth-child(2)
+    padding-left: 10px
+  a
+    color: $black
+    text-decoration: none
+    &:hover
+      cursor: pointer
+      color: $green
+    &:active
+      color: $blue

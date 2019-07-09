@@ -20,13 +20,13 @@ export default class HeaderBar extends Component {
           <LinkButton title="Explore" link="/"/>
           <LinkButton title="Start a project" link="/"/>
         </div>
-        <div>
-          <h2>PunchStarter</h2>
+        <div className="logo">
+          <h2>punchstarter</h2>
         </div>
         <div className="header-search-profile">
           <p>Search</p>
-          <FontAwesomeIcon icon={faSearch}/>
-          <ProfileImage image={"../src/assets/images/gorilla.png"}/>
+          <FontAwesomeIcon className="icon" icon={faSearch}/>
+          <ProfileImage className="profile-image" image={"../src/assets/images/gorilla.png"}/>
         </div>
       </div>
     );
