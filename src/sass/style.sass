@@ -2,6 +2,8 @@
 $blue: #256EFF
 $green: #61e786
 $black: #333745
+$gray-border: #e8e8e8
+$gray: #656969
 
 //Global Styles  
 .App
@@ -15,7 +17,7 @@ $black: #333745
 .header-bar
   display: flex
   justify-content: space-between
-  border-bottom: 1px solid #e8e8e8
+  border-bottom: 1px solid $gray-border
   padding: 0 25px
   .logo
     font-family: 'Quicksand', sans-serif
@@ -54,3 +56,32 @@ $black: #333745
       color: $green
     &:active
       color: $blue
+
+.category-bar
+  display: flex
+  align-items: center
+  justify-content: space-around
+  padding: 20px 60px 20px 60px
+  border-bottom: 1px solid $gray-border
+  .link-button a
+    font-size: 16px
+    color: $gray
+    text-decoration: none
+    position: relative
+    &:hover
+      cursor: pointer
+      color: $green
+    &:after
+      bottom: 0
+      content: ''
+      height: 2px
+      left: 50%
+      position: absolute
+      background: $green
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+    &:hover:after
+      width: 100%
+      left:0
+
+    

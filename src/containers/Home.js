@@ -10,10 +10,10 @@ export default class Home extends Component {
 
   render() {
     return (
-      <>
+      <div className="home">
         <CategoryBar/>
         <div>home</div>
-      </>
+      </div>
     );
   }
 }

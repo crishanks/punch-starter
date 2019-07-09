@@ -58,4 +58,36 @@
   color: #256EFF;
 }
 
+.category-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 60px 20px 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.category-bar .link-button a {
+  font-size: 16px;
+  color: #656969;
+  text-decoration: none;
+  position: relative;
+}
+.category-bar .link-button a:hover {
+  cursor: pointer;
+  color: #61e786;
+}
+.category-bar .link-button a:after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #61e786;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.category-bar .link-button a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 /*# sourceMappingURL=App.css.map */
