@@ -12,6 +12,7 @@ export default class CategoryBar extends Component {
     return (
       <div className="category-bar">
         <div className="link-button-container">
+          <LinkButton title="Arts" link="/"/>
           <LinkButton title="Comics & Illustration" link="/"/>
           <LinkButton title="Design & Tech" link="/"/>
           <LinkButton title="Film" link="/"/>

@@ -59,11 +59,10 @@
 }
 
 .category-bar {
-  padding: 20px 60px 20px 60px;
+  padding: 20px 14vw 0px 14vw;
   border-bottom: 1px solid #e8e8e8;
 }
 .category-bar .link-button-container {
-  width: auto;
   height: 50px;
   overflow-y: hidden;
   overflow-x: scroll;
