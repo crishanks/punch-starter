@@ -11,11 +11,15 @@ export default class CategoryBar extends Component {
   render() {
     return (
       <div className="category-bar">
-        <LinkButton title="Arts" link="/"/>
-        <LinkButton title="Tech" link="/"/>
-        <LinkButton title="Film" link="/"/>
-        <LinkButton title="Games" link="/"/>
-        <LinkButton title="Music" link="/"/>
+        <div className="link-button-container">
+          <LinkButton title="Comics & Illustration" link="/"/>
+          <LinkButton title="Design & Tech" link="/"/>
+          <LinkButton title="Film" link="/"/>
+          <LinkButton title="Food & Craft" link="/"/>
+          <LinkButton title="Games" link="/"/>
+          <LinkButton title="Music" link="/"/>
+          <LinkButton title="Publishing" link="/"/>
+        </div>
       </div>
     );
   }
