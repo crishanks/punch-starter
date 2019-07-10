@@ -15,7 +15,7 @@ export default class Home extends Component {
         <CategoryBar/>
         <ContentPreview 
           header="featured project"
-          image=""
+          images={[""]}
           descriptionTitle="The Wolf of Baghdad Soundtrack"
           description="An audiovisual journey through a Jewish-Iraqi family's memories of their lost homeland."
           authorName="Carol Isaaacs (The Surreal McCoy)"

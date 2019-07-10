@@ -6,18 +6,26 @@ import PreviewImage from '../components/PreviewImage';
 import PreviewDescription from '../components/PreviewDescription';
 import AuthorInfoTag from '../components/AuthorInfoTag';
 
-//DOES IT EVEN MAKE SENSE TO DO THIS?
-
 export default class ContentPreview extends Component {
   constructor(props) {
     super(props)
   }
 
+  renderHeader() {
+    return this.props.header ? <PreviewHeader header={this.props.header}/> : null
+  }
+
+  renderImages() {
+    return this.props.images.map(image => {
+      return <PreviewImage image={image}/>
+    });
+  }
+
   render() {
     return (
       <div className="content-preview">
-        <PreviewHeader header={this.props.header}/>
-        <PreviewImage image={this.props.image}/>
+        {this.renderHeader()}
+        {this.renderImages()}
         <PreviewDescription 
           descriptionTitle={this.props.descriptionTitle}
           description={this.props.description}
