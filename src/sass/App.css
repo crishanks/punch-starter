@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e8e8e8;
-  padding: 0 25px;
+  padding: 0 10px;
 }
 .header-bar .logo {
   font-family: "Quicksand", sans-serif;
@@ -35,8 +35,8 @@
 }
 .header-search-profile-container .profile-image img {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .header-link-buttons {
@@ -59,7 +59,7 @@
 }
 
 .category-bar {
-  padding: 20px 14vw 0px 14vw;
+  padding: 10px 12vw 0px 12vw;
   border-bottom: 1px solid #e8e8e8;
 }
 .category-bar .link-button-container {
