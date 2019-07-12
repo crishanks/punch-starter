@@ -18,7 +18,7 @@ export default class Home extends Component {
           images={[""]}
           descriptionTitle="The Wolf of Baghdad Soundtrack"
           description="An audiovisual journey through a Jewish-Iraqi family's memories of their lost homeland."
-          authorName="Carol Isaaacs (The Surreal McCoy)"
+          authorName="Carol Isaacs (The Surreal McCoy)"
         />
       </div>
     );
