@@ -14,10 +14,10 @@ export default class ProjectPreview extends Component {
   render() {
     return (
       <div className="project-preview-container">
-        <PreviewImage image={"https://ksr-static.imgix.net/uu20wnrf-wigbold.png?ixlib=rb-2.1.0&auto=compress%2Cformat&w=1000&fit=min&s=9629dbebfa0ad1aa190ffe845cc2aea8"}/>
-        <PreviewTitle title={"The Wigbold Chef's Knife"}/>
-        <ShortDescription description={"Slice and dice like a Michelin star chef."}/>
-        <AuthorInfoTag authorName={"Crowd Cookware"}/>
+        <PreviewImage image={this.props.image}/>
+        <PreviewTitle title={this.props.title}/>
+        <ShortDescription description={this.props.description}/>
+        <AuthorInfoTag authorName={this.props.authorName}/>
       </div>
     );
   }
