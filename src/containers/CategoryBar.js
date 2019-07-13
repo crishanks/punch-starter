@@ -10,7 +10,7 @@ export default class CategoryBar extends Component {
 
   render() {
     return (
-      <div className="category-bar">
+      <div className="category-bar-container">
         <div className="link-button-container">
           <LinkButton title="Arts" link="/"/>
           <LinkButton title="Comics & Illustration" link="/"/>

@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 .App p, .App div, .App a {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #333745;
 }
 
@@ -58,33 +60,48 @@
   color: #256EFF;
 }
 
-.category-bar {
-  padding: 10px 12vw 0px 12vw;
+.home {
+  display: grid;
+  grid-template-columns: 5% 15% 15% 15% 15% 15% 15% 5%;
+  grid-template-rows: 15% 15% 15% 15% 15% 15% 5%;
+  grid-template-areas: "category-bar category-bar category-bar category-bar category-bar category-bar category-bar category-bar" ". featured-project featured-project featured-project . . . ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . .";
+  width: 100%;
+  height: 100%;
+}
+
+.category-bar-container {
+  grid-area: category-bar;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border-bottom: 1px solid #e8e8e8;
 }
-.category-bar .link-button-container {
+.category-bar-container .link-button-container {
   height: 50px;
+  width: 100%;
+  margin: 0 10vw;
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
-.category-bar .link-button-container::-webkit-scrollbar {
+.category-bar-container .link-button-container::-webkit-scrollbar {
   width: 0 !important;
 }
-.category-bar .link-button-container a {
+.category-bar-container .link-button-container a {
   font-size: 16px;
   color: #656969;
   text-decoration: none;
   position: relative;
 }
-.category-bar .link-button-container a:hover {
+.category-bar-container .link-button-container a:hover {
   cursor: pointer;
   color: #61e786;
 }
-.category-bar .link-button-container a:after {
+.category-bar-container .link-button-container a:after {
   bottom: 0;
   content: "";
   height: 2px;
@@ -94,9 +111,13 @@
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.category-bar .link-button-container a:hover:after {
+.category-bar-container .link-button-container a:hover:after {
   width: 100%;
   left: 0;
+}
+
+.featured-project-container {
+  grid-area: featured-project;
 }
 
 /*# sourceMappingURL=App.css.map */
