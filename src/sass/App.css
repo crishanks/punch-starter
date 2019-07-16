@@ -75,6 +75,15 @@
   color: #656969;
 }
 
+.percent-funded p {
+  color: #0f7262;
+  font-weight: 600;
+}
+
+.author-info-tag p {
+  color: #656969;
+}
+
 .category-bar-container {
   height: 50%;
   display: flex;
@@ -134,14 +143,17 @@
 .featured-recommended-container {
   display: flex;
   padding: 20px 60px;
+  font-family: "Roboto", sans-serif;
 }
 .featured-recommended-container .featured-project-container {
-  flex: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   max-width: 450px;
   padding-right: 2rem;
+}
+.featured-recommended-container .featured-project-container .section-header {
+  margin-bottom: 20px;
 }
 .featured-recommended-container .featured-project-container img {
   max-width: 450px;
@@ -153,8 +165,11 @@
   align-items: flex-start;
   padding: 0;
 }
+.featured-recommended-container .featured-project-container .project-preview-content .short-description p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+}
 .featured-recommended-container .recommended-container {
-  flex: 0, 0, auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -176,6 +191,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 110px;
 }
 .featured-recommended-container .recommended-container .project-preview-content {
   grid-row: 1/4;
