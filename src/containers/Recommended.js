@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //Components
 import SectionHeader from '../components/SectionHeader';
 import ProjectPreview from './ProjectPreview';
+import NumberedSelector from '../components/NumberedSelector'
 
 export default class Recommended extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ export default class Recommended extends Component {
           authorName={"Cyanide And Happiness"}
           heart={true}
         />
+        <NumberedSelector/>
       </div>
     );
   }

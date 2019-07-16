@@ -142,8 +142,6 @@ $gray: #656969
       width: 100%
       border-bottom: 1px solid $gray-border
       padding: 1.2rem 0rem
-      img
-
     .preview-image 
       grid-row: 1/4
       grid-column: 1
@@ -165,3 +163,17 @@ $gray: #656969
       grid-column: 3
       height: 100%
       
+// Numbered Selector
+.numbered-selector
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 40%
+  margin-top: 5rem
+  margin-left: auto
+  div, .arrow
+    font-size: 16px
+    color: #3D69E2
+    &:hover
+      cursor: pointer
+    // add styling onClick for clicked underline and color

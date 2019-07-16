@@ -177,4 +177,20 @@
   height: 100%;
 }
 
+.numbered-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin-top: 5rem;
+  margin-left: auto;
+}
+.numbered-selector div, .numbered-selector .arrow {
+  font-size: 16px;
+  color: #3D69E2;
+}
+.numbered-selector div:hover, .numbered-selector .arrow:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=App.css.map */
