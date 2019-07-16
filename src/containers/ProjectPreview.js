@@ -7,6 +7,10 @@ import ShortDescription from '../components/ShortDescription';
 import AuthorInfoTag from '../components/AuthorInfoTag';
 import PercentFunded from '../components/PercentFunded';
 
+//Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+
 export default class ProjectPreview extends Component {
   constructor(props) {
     super(props);
@@ -20,6 +24,7 @@ export default class ProjectPreview extends Component {
         {this.props.description ? <ShortDescription description={this.props.description}/> : null}
         {this.props.percentage ? <PercentFunded percentage={this.props.percentage}/> : null}
         <AuthorInfoTag authorName={this.props.authorName}/>
+        {this.props.heart ? <FontAwesomeIcon className="heart-icon" icon={faHeart}/> : null}
       </div>
     );
   }
