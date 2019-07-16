@@ -14,8 +14,10 @@ export default class Home extends Component {
     return (
       <div className="home">
         <CategoryBar/>
-        <FeaturedProject/>
-        <Recommended/>
+        <div className="featured-recommended-container">
+          <FeaturedProject/>
+          <Recommended/>
+        </div>
       </div>
     );
   }
