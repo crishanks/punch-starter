@@ -110,4 +110,11 @@
   left: 0;
 }
 
+.heart-icon {
+  color: gray;
+}
+.heart-icon:hover {
+  color: black;
+}
+
 /*# sourceMappingURL=App.css.map */

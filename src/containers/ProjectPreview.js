@@ -5,6 +5,7 @@ import PreviewImage from '../components/PreviewImage';
 import PreviewTitle from '../components/PreviewTitle';
 import ShortDescription from '../components/ShortDescription';
 import AuthorInfoTag from '../components/AuthorInfoTag';
+import PercentFunded from '../components/PercentFunded';
 
 export default class ProjectPreview extends Component {
   constructor(props) {
@@ -16,7 +17,8 @@ export default class ProjectPreview extends Component {
       <div className="project-preview-container">
         <PreviewImage image={this.props.image}/>
         <PreviewTitle title={this.props.title}/>
-        <ShortDescription description={this.props.description}/>
+        {this.props.description ? <ShortDescription description={this.props.description}/> : null}
+        {this.props.percentage ? <PercentFunded percentage={this.props.percentage}/> : null}
         <AuthorInfoTag authorName={this.props.authorName}/>
       </div>
     );

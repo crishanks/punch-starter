@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 //Components
 import CategoryBar from './CategoryBar';
 import FeaturedProject from './FeaturedProject';
+import Recommended from './Recommended';
 
 export default class Home extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export default class Home extends Component {
       <div className="home">
         <CategoryBar/>
         <FeaturedProject/>
+        <Recommended/>
       </div>
     );
   }
