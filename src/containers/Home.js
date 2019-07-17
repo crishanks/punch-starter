@@ -5,6 +5,7 @@ import CategoryBar from './CategoryBar';
 import FeaturedProject from './FeaturedProject';
 import Recommended from './Recommended';
 import SquareButton from '../components/SquareButton';
+import FreshFavorites from './FreshFavorites';
 
 export default class Home extends Component {
   constructor(props) {
@@ -29,6 +30,9 @@ export default class Home extends Component {
           <div className="square-button">
             <SquareButton title={"Subscribe"}/>
           </div>
+        </div>
+        <div className="fresh-favorites-container">
+          <FreshFavorites/>
         </div>
       </div>
     );
