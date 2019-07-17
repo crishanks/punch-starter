@@ -139,9 +139,16 @@ $libre-baskerville: 'Libre Baskerville', serif
 
 .feature-project-component-container
   width: 100%
+  display: flex
+  flex-wrap: wrap
 
 .recommended-component-container
   width: 100%
+  .numbered-selector
+    justify-self: flex-end
+  .section-header
+
+  
 
 //UPDATE LAYOUT FOR UP TO 794PX WIDE
 @media (max-width: 794px)
@@ -158,27 +165,45 @@ $libre-baskerville: 'Libre Baskerville', serif
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    padding: 2rem 3rem 0 0
+    padding: 2rem
     .section-header
       margin-bottom: 20px
     img
-      max-width: 450px
+      max-width: 580px
       border-bottom: solid 12px $forest-green
     .project-preview-content
       display: flex
       flex-direction: column
       align-items: flex-start
       padding: 0
-      .short-description p
-        font-family: $libre-baskerville
-        font-size: 18px
+      .short-description 
+        margin: -1rem 0
+        p
+          font-family: $libre-baskerville
+          font-size: 18px
   .recommended-container
     flex: 0 0 auto
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    padding: 2rem 0 0 2rem
+    padding: 2rem 0 0 3rem
     border-left: 1px solid $gray-border
+    .section-header
+      display: flex
+      justify-content: flex-start
+    .numbered-selector
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 140px
+      margin-top: 5rem
+      margin-left: auto
+      div, .arrow
+        font-size: 16px
+        color: #3D69E2
+        &:hover
+          cursor: pointer
+        // add styling onClick for clicked underline and color
     .project-preview-container
       display: grid
       grid-template-rows: 1fr 1fr 1fr
@@ -212,18 +237,3 @@ $libre-baskerville: 'Libre Baskerville', serif
       display: flex
       align-items: center
       justify-content: center
-      
-// Numbered Selector
-.numbered-selector
-  display: flex
-  justify-content: space-between
-  align-items: center
-  width: 140px
-  margin-top: 5rem
-  margin-left: auto
-  div, .arrow
-    font-size: 16px
-    color: #3D69E2
-    &:hover
-      cursor: pointer
-    // add styling onClick for clicked underline and color

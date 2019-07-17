@@ -142,12 +142,16 @@
 
 .feature-project-component-container {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recommended-component-container {
   width: 100%;
 }
-
+.recommended-component-container .numbered-selector {
+  justify-self: flex-end;
+}
 .featured-recommended-container {
   display: flex;
   padding: 20px 60px;
@@ -158,13 +162,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 2rem 3rem 0 0;
+  padding: 2rem;
 }
 .featured-recommended-container .featured-project-container .section-header {
   margin-bottom: 20px;
 }
 .featured-recommended-container .featured-project-container img {
-  max-width: 450px;
+  max-width: 580px;
   border-bottom: solid 12px #0f7262;
 }
 .featured-recommended-container .featured-project-container .project-preview-content {
@@ -172,6 +176,9 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
+}
+.featured-recommended-container .featured-project-container .project-preview-content .short-description {
+  margin: -1rem 0;
 }
 .featured-recommended-container .featured-project-container .project-preview-content .short-description p {
   font-family: "Libre Baskerville", serif;
@@ -182,8 +189,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 2rem 0 0 2rem;
+  padding: 2rem 0 0 3rem;
   border-left: 1px solid #e8e8e8;
+}
+.featured-recommended-container .recommended-container .section-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.featured-recommended-container .recommended-container .numbered-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  margin-top: 5rem;
+  margin-left: auto;
+}
+.featured-recommended-container .recommended-container .numbered-selector div, .featured-recommended-container .recommended-container .numbered-selector .arrow {
+  font-size: 16px;
+  color: #3D69E2;
+}
+.featured-recommended-container .recommended-container .numbered-selector div:hover, .featured-recommended-container .recommended-container .numbered-selector .arrow:hover {
+  cursor: pointer;
 }
 .featured-recommended-container .recommended-container .project-preview-container {
   display: grid;
@@ -222,22 +248,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.numbered-selector {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 140px;
-  margin-top: 5rem;
-  margin-left: auto;
-}
-.numbered-selector div, .numbered-selector .arrow {
-  font-size: 16px;
-  color: #3D69E2;
-}
-.numbered-selector div:hover, .numbered-selector .arrow:hover {
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
