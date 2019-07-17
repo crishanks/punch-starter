@@ -159,6 +159,7 @@ $libre-baskerville: 'Libre Baskerville', serif
 .featured-recommended-container
   display: flex
   padding: 20px 60px
+  margin: 20px 0
   font-family: $roboto-light
   .featured-project-container
     flex-grow: 2
@@ -186,7 +187,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    padding: 2rem 0 0 3rem
+    padding: 2rem 0 0 3.5rem
     border-left: 1px solid $gray-border
     .section-header
       display: flex
@@ -237,3 +238,32 @@ $libre-baskerville: 'Libre Baskerville', serif
       display: flex
       align-items: center
       justify-content: center
+
+//Square Button
+.square-button
+  background-color: #000000
+  height: 40px
+  width: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  div
+    color: #FFFFFF
+
+.discover-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 20px
+  padding: 40px 0
+  border-bottom: 1px solid $gray-border
+  border-top: 1px solid $gray-border
+  h3, p
+    font-family: $libre-baskerville
+  h3
+    font-size: 24px
+  p 
+    font-size: 14px
+  .square-button
+    margin: 20px 0
