@@ -12,7 +12,7 @@ export default class Recommended extends Component {
 
   render() {
     return (
-      <div className="recommended-container">
+      <div className="recommended-component-container">
         <SectionHeader header={"recommended"}/>
         <ProjectPreview
           image={"https://ksr-ugc.imgix.net/assets/025/121/443/7899f0ae541e4796a7f5bee023456302_original.png?ixlib=rb-2.1.0&crop=faces&w=560&h=315&fit=crop&v=1557769029&auto=format&frame=1&q=92&s=eb5ec269ccbaaac8d012d615853f4eeb"}

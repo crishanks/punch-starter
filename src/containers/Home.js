@@ -15,8 +15,12 @@ export default class Home extends Component {
       <div className="home">
         <CategoryBar/>
         <div className="featured-recommended-container">
-          <FeaturedProject/>
-          <Recommended/>
+          <div className="featured-project-container">
+            <FeaturedProject/>
+          </div>
+          <div className="recommended-container">
+            <Recommended/>
+          </div>
         </div>
       </div>
     );

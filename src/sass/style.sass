@@ -137,6 +137,12 @@ $libre-baskerville: 'Libre Baskerville', serif
     cursor: pointer
 
 
+.feature-project-component-container
+  width: 100%
+
+.recommended-component-container
+  width: 100%
+
 //UPDATE LAYOUT FOR UP TO 794PX WIDE
 @media (max-width: 794px)
   .featured-recommended-container
@@ -148,12 +154,11 @@ $libre-baskerville: 'Libre Baskerville', serif
   padding: 20px 60px
   font-family: $roboto-light
   .featured-project-container
-    // flex: 0 0 auto
+    flex-grow: 2
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    max-width: 450px
-    padding-right: 2rem
+    padding: 2rem 3rem 0 0
     .section-header
       margin-bottom: 20px
     img
@@ -168,11 +173,11 @@ $libre-baskerville: 'Libre Baskerville', serif
         font-family: $libre-baskerville
         font-size: 18px
   .recommended-container
-    // flex: 3
+    flex: 0 0 auto
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    padding-left: 2rem
+    padding: 2rem 0 0 2rem
     border-left: 1px solid $gray-border
     .project-preview-container
       display: grid
@@ -213,7 +218,7 @@ $libre-baskerville: 'Libre Baskerville', serif
   display: flex
   justify-content: space-between
   align-items: center
-  width: 40%
+  width: 140px
   margin-top: 5rem
   margin-left: auto
   div, .arrow
