@@ -26,7 +26,7 @@ export default class Home extends Component {
           </div>
         </div>
         <div className="discover-container">
-          <h3>Discover the best and brightest projects on Kickstarter</h3>
+          <h3>Discover the best and brightest projects on Punchstarter</h3>
           <p>Sign up to receive our weekly Project We Love newsletter.</p>
           <div className="square-button">
             <SquareButton title={"Subscribe"}/>
