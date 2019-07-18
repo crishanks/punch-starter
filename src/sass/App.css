@@ -417,5 +417,15 @@
 .featured-authors-container .authors-top-row img, .featured-authors-container .authors-bottom-row img {
   z-index: 2;
 }
+.featured-authors-container .authors-top-row a, .featured-authors-container .authors-bottom-row a {
+  font-size: 16px;
+}
+.featured-authors-container .authors-top-row p, .featured-authors-container .authors-bottom-row p {
+  font-size: 10px;
+}
+.featured-authors-container .authors-top-row a, .featured-authors-container .authors-top-row p, .featured-authors-container .authors-bottom-row a, .featured-authors-container .authors-bottom-row p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+}
 
 /*# sourceMappingURL=App.css.map */
