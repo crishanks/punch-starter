@@ -136,7 +136,6 @@ $libre-baskerville: 'Libre Baskerville', serif
     color: black
     cursor: pointer
 
-
 .feature-project-component-container
   width: 100%
   display: flex
@@ -146,7 +145,6 @@ $libre-baskerville: 'Libre Baskerville', serif
   width: 100%
   .numbered-selector
     justify-self: flex-end
-  .section-header
 
 //UPDATE LAYOUT FOR UP TO 794PX WIDE
 @media (max-width: 794px)
@@ -157,6 +155,7 @@ $libre-baskerville: 'Libre Baskerville', serif
 .featured-recommended-container
   display: flex
   padding: 20px 60px
+  margin: 20px 0
   font-family: $roboto-light
   .featured-project-container
     flex-grow: 2
@@ -184,7 +183,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     display: flex
     flex-wrap: wrap
     justify-content: flex-start
-    padding: 2rem 0 0 3rem
+    padding: 2rem 0 0 3.5rem
     border-left: 1px solid $gray-border
     .section-header
       display: flex
@@ -235,3 +234,66 @@ $libre-baskerville: 'Libre Baskerville', serif
       display: flex
       align-items: center
       justify-content: center
+
+//Square Button
+.square-button
+  background-color: #000000
+  height: 40px
+  width: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  div
+    color: #FFFFFF
+
+.discover-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 20px 0
+  padding: 40px 0
+  border-bottom: 1px solid $gray-border
+  border-top: 1px solid $gray-border
+  h3, p
+    font-family: $libre-baskerville
+  h3
+    font-size: 24px
+  p 
+    font-size: 14px
+  .square-button
+    margin: 20px 0
+
+// Fresh Favorites
+.fresh-favorites-container
+  display: grid
+  grid-template-rows: 10% 1fr
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  padding-left: 50px
+  padding-right: 50px
+  padding-top: 20px
+  .section-header
+    grid-row: 1
+    grid-column: 1
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 30px
+    margin-top: 10px
+  .project-preview-container 
+    grid-row: 2
+    display: flex
+    flex-direction: column
+    img
+      max-width: 267px
+    .project-preview-content
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      margin-right: 20px
+    .preview-title h1
+      text-align: start
+      font-size: 18px
+    .short-description p
+      text-align: start
+      font-family: $libre-baskerville
