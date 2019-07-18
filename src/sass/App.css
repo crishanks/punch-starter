@@ -291,7 +291,9 @@
   display: grid;
   grid-template-rows: 10% 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
 }
 .fresh-favorites-container .section-header {
   grid-row: 1;
@@ -299,8 +301,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 10px;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 .fresh-favorites-container .project-preview-container {
   grid-row: 2;
