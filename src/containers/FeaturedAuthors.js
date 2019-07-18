@@ -18,7 +18,7 @@ export default class FeaturedAuthors extends Component {
         this.props.publicationBlurb ? 
         <div className="publication-blurb">
           <PublicationBlurb
-            image={"http://www.w3.org/2000/svg"}
+            image={"https://ui-ex.com/images/swirl-transparent-3.png"}
             title={"The Creative Independent"}
             description={"A growing resource of emotional and practical guidance for creative people."}
             linkTitle={"Visit The Creative Independent"}
