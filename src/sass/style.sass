@@ -269,9 +269,8 @@ $libre-baskerville: 'Libre Baskerville', serif
   display: grid
   grid-template-rows: 10% 1fr
   grid-template-columns: 1fr 1fr 1fr 1fr
-  padding-left: 50px
-  padding-right: 50px
-  padding-top: 20px
+  padding: 20px 50px 0 50px
+  border-bottom: 1px solid $gray-border
   .section-header
     grid-row: 1
     grid-column: 1
@@ -297,3 +296,11 @@ $libre-baskerville: 'Libre Baskerville', serif
     .short-description p
       text-align: start
       font-family: $libre-baskerville
+
+//Featured Authors
+.featured-authors-container
+  .dotted-border
+    border: 1px dashed
+    z-index: -1
+    width: 600px
+    height: 350px
