@@ -378,7 +378,7 @@
   width: 80%;
 }
 .featured-authors-container .publication-blurb img {
-  width: 80px;
+  width: 90px;
   height: 80px;
 }
 .featured-authors-container .publication-blurb h1 {
@@ -426,6 +426,18 @@
 .featured-authors-container .authors-top-row a, .featured-authors-container .authors-top-row p, .featured-authors-container .authors-bottom-row a, .featured-authors-container .authors-bottom-row p {
   font-family: "Libre Baskerville", serif;
   font-weight: 100;
+}
+
+.basic-link a {
+  font-size: 14px;
+  color: #256EFF;
+}
+.basic-link a:hover {
+  cursor: pointer;
+  color: #61e786;
+}
+.basic-link a:active {
+  color: #256EFF;
 }
 
 /*# sourceMappingURL=App.css.map */
