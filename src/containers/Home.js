@@ -7,6 +7,7 @@ import Recommended from './Recommended';
 import SquareButton from '../components/SquareButton';
 import FreshFavorites from './FreshFavorites';
 import FeaturedAuthors from './FeaturedAuthors';
+import MoreToExplore from './MoreToExplore';
 
 export default class Home extends Component {
   constructor(props) {
@@ -37,6 +38,9 @@ export default class Home extends Component {
         </div>
         <div className="featured-authors-container">
           <FeaturedAuthors publicationBlurb={true}/>
+        </div>
+        <div className="more-to-explore-container">
+          <MoreToExplore/>
         </div>
       </div>
     );

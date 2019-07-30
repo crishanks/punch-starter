@@ -392,3 +392,35 @@ $libre-baskerville: 'Libre Baskerville', serif
       color: $green
     &:active
       color: $blue
+
+// More to Explore
+.more-to-explore-container
+  border-bottom: 1px solid $gray-border
+  margin-bottom: 60px
+  .section-header
+    display: flex
+    justify-content: flex-start
+    margin: 60px
+  .project-preview-containers-container
+    margin: 60px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr
+    grid-gap: 20px
+  .project-preview-container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    text-align: left
+    img
+      max-width: 250px
+      max-height: 360px
+    p
+      font-family: $libre-baskerville
+      font-size: 16px
+    .author-info-tag p
+      font-size: 12px
+      color: $gray
+      font-family: $roboto-light
+

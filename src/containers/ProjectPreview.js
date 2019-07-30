@@ -21,7 +21,7 @@ export default class ProjectPreview extends Component {
       <div className="project-preview-container">
         <PreviewImage image={this.props.image}/>
         <div className="project-preview-content">
-          <PreviewTitle title={this.props.title}/>
+          {this.props.title ? <PreviewTitle title={this.props.title}/> : null}
           {this.props.description ? <ShortDescription description={this.props.description}/> : null}
           {this.props.percentage ? <PercentFunded percentage={this.props.percentage}/> : null}
           <AuthorInfoTag authorName={this.props.authorName}/>
