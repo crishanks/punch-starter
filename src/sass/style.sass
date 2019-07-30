@@ -402,7 +402,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     justify-content: flex-start
     margin: 60px
   .project-preview-containers-container
-    margin: 60px
+    margin: 60px 
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
     grid-template-rows: 1fr
@@ -410,15 +410,17 @@ $libre-baskerville: 'Libre Baskerville', serif
   .project-preview-container
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: space-evenly
     align-items: flex-start
     text-align: left
     img
       max-width: 250px
       max-height: 360px
-    p
-      font-family: $libre-baskerville
-      font-size: 16px
+    .project-preview-content
+      width: 98%
+      p
+        font-family: $libre-baskerville
+        font-size: 16px
     .author-info-tag p
       font-size: 12px
       color: $gray
