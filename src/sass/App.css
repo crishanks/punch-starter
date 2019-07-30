@@ -447,10 +447,10 @@
 .more-to-explore-container .section-header {
   display: flex;
   justify-content: flex-start;
-  margin: 60px;
+  margin-left: 60px;
 }
 .more-to-explore-container .project-preview-containers-container {
-  margin: 60px;
+  margin: 20px 40px 20px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -468,7 +468,7 @@
   max-height: 360px;
 }
 .more-to-explore-container .project-preview-container .project-preview-content {
-  width: 98%;
+  width: 90%;
 }
 .more-to-explore-container .project-preview-container .project-preview-content p {
   font-family: "Libre Baskerville", serif;
