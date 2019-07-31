@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 //Components
 import ProjectPreview from './ProjectPreview';
-import SectionHeader from '../components/SectionHeader';
+import SectionHeader from '../../components/Home/SectionHeader';
 
 export default class MoreToExplore extends Component {
     constructor(props) {

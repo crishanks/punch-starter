@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 //Components
-import FeaturedAuthor from '../components/FeaturedAuthor';
-import PublicationBlurb from '../components/PublicationBlurb';
+import FeaturedAuthor from '../../components/Home/FeaturedAuthor';
+import PublicationBlurb from '../../components/Home/PublicationBlurb';
 
 export default class FeaturedAuthors extends Component {
   constructor(props) {

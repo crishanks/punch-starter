@@ -5,8 +5,8 @@ import '../src/sass/App.css';
 import { Switch, Route } from 'react-router-dom';
 
 //Components
-import Home from '../src/containers/Home';
-import HeaderBar from '../src/containers/HeaderBar';
+import Home from '../src/containers/Home/Home';
+import HeaderBar from '../src/containers/Home/HeaderBar';
 
 function App() {
   return (

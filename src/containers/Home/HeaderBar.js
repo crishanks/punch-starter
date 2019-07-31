@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 //Components
-import LinkButton from '../components/LinkButton';
-import ProfileImage from '../components/ProfileImage';
+import LinkButton from '../../components/Home/LinkButton';
+import ProfileImage from '../../components/Home/ProfileImage';
 
 //Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

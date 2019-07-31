@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import CategoryBar from './CategoryBar';
 import FeaturedProject from './FeaturedProject';
 import Recommended from './Recommended';
-import SquareButton from '../components/SquareButton';
+import SquareButton from '../../components/Home/SquareButton';
 import FreshFavorites from './FreshFavorites';
 import FeaturedAuthors from './FeaturedAuthors';
 import MoreToExplore from './MoreToExplore';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //Components
-import LinkButton from '../components/LinkButton';
+import LinkButton from '../../components/Home/LinkButton';
 
 export default class CategoryBar extends Component {
   constructor(props) {

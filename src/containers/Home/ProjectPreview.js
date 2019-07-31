@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 //Components
-import PreviewImage from '../components/PreviewImage';
-import PreviewTitle from '../components/PreviewTitle';
-import ShortDescription from '../components/ShortDescription';
-import AuthorInfoTag from '../components/AuthorInfoTag';
-import PercentFunded from '../components/PercentFunded';
+import PreviewImage from '../../components/Home/PreviewImage';
+import PreviewTitle from '../../components/Home/PreviewTitle';
+import ShortDescription from '../../components/Home/ShortDescription';
+import AuthorInfoTag from '../../components/Home/AuthorInfoTag';
+import PercentFunded from '../../components/Home/PercentFunded';
 
 //Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

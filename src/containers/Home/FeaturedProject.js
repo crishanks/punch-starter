@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //Components
-import SectionHeader from '../components/SectionHeader';
+import SectionHeader from '../../components/Home/SectionHeader';
 import ProjectPreview from './ProjectPreview';
 
 export default class FeaturedProject extends Component {
