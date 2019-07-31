@@ -15,10 +15,14 @@
   border-bottom: 1px solid #e8e8e8;
   padding: 0 10px;
 }
-.header-bar .logo {
+.header-bar .logo h2 a {
   font-family: "Quicksand", sans-serif;
   color: #256EFF;
   font-size: 110%;
+  text-decoration: none;
+}
+.header-bar .logo h2 a:hover {
+  cursor: pointer;
 }
 
 .header-search-profile-container {

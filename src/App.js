@@ -7,13 +7,15 @@ import { Switch, Route } from 'react-router-dom';
 //Components
 import Home from '../src/containers/Home/Home';
 import HeaderBar from '../src/containers/Home/HeaderBar';
+import StartAProject from './containers/StartAProject/StartAProject';
 
 function App() {
   return (
     <div className="App">
       <HeaderBar/>
       <Switch>
-        <Route path='/' component={Home}/>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/start' component={StartAProject}/>
       </Switch>
     </div>
   );

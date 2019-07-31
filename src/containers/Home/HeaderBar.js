@@ -18,10 +18,10 @@ export default class HeaderBar extends Component {
       <div className="header-bar">
         <div className="header-link-buttons">
           <LinkButton title="Explore" link="/"/>
-          <LinkButton title="Start a project" link="/"/>
+          <LinkButton title="Start a project" link="/start"/>
         </div>
         <div className="logo">
-          <h2>punchstarter</h2>
+          <h2><a href="/">punchstarter</a></h2>
         </div>
         <div className="header-search-profile-container">
           <div className="header-search">
