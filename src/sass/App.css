@@ -504,5 +504,8 @@
   align-items: center;
   border: 1px black solid;
 }
+.start-a-project .drop-down .icon:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=App.css.map */
