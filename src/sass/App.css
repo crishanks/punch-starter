@@ -485,4 +485,24 @@
   font-family: "Roboto", sans-serif;
 }
 
+.start-a-project {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  margin-top: 40px;
+}
+.start-a-project div {
+  grid-column: 2;
+}
+.start-a-project .short-description p {
+  font-size: 18px;
+}
+.start-a-project .drop-down {
+  margin: 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+}
+
 /*# sourceMappingURL=App.css.map */
