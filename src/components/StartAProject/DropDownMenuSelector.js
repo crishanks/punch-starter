@@ -6,14 +6,18 @@ import DropDownMenuSelectorRow from './DropDownMenuSelectorRow';
 const DropDownMenuSelector = (props) => {
   return (
     <>
-      {renderSelectorRows(props.categories)}
+      {renderSelectorRows(props)}
     </>
   );
 }
 
-const renderSelectorRows = (categories) => {
-  return categories.map(category => {
-    return <DropDownMenuSelectorRow category={category}/>
+const renderSelectorRows = (props) => {
+  return props.categories.map(category => {
+    return <DropDownMenuSelectorRow 
+      category={category}
+      toggleDropDownClick={props.toggleDropDownClick}
+      dropDownClicked={props.dropDownClicked}
+    />
   });
 }
 

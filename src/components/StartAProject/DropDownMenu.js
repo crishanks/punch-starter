@@ -10,11 +10,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 const DropDownMenu = (props) => {
   return (
     <>
-      <p>{props.title}</p>
+      <p id="dropdown-category-title">{props.title}</p>
       <FontAwesomeIcon 
         className="icon" 
         icon={faChevronDown}
-        onClick={() => props.toggleClick(!props.clicked)}
+        onClick={() => props.toggleDropDownClick(!props.dropDownClicked)}
       />
     </>
   );
