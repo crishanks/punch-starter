@@ -503,31 +503,40 @@
   justify-content: space-between;
   align-items: center;
   border: 1px black solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 .start-a-project .drop-down-header .icon:hover {
   cursor: pointer;
 }
 .start-a-project .drop-down-header p {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .dropdown-menu-selector {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 20px;
   border: 1px solid black;
-  margin: 0px 20px 60px;
+  margin: 0px 20px;
   height: 66%;
   overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .menu-selector-row {
-  width: 100%;
+  width: 97%;
+  margin: 6px;
   display: flex;
 }
 .menu-selector-row p {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 12px;
+}
+.menu-selector-row:hover {
+  cursor: pointer;
+  background-color: #e8e8e8;
 }
 
 /*# sourceMappingURL=App.css.map */
