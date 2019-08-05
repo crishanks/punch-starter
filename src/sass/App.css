@@ -519,14 +519,15 @@
   align-items: flex-start;
   border: 1px solid black;
   margin: 0px 20px;
-  height: 66%;
+  padding: 6px 0px;
+  height: 71%;
   overflow: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .menu-selector-row {
   width: 97%;
-  margin: 6px;
+  margin: 0 6px;
   display: flex;
 }
 .menu-selector-row p {
