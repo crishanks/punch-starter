@@ -440,8 +440,8 @@ $libre-baskerville: 'Libre Baskerville', serif
     grid-column: 2
   .short-description p
     font-size: 18px
-  .drop-down
-    margin: 40px
+  .drop-down-header
+    margin: 20px
     padding: 0 20px
     display: flex
     justify-content: space-between
@@ -450,3 +450,19 @@ $libre-baskerville: 'Libre Baskerville', serif
     .icon
       &:hover
         cursor: pointer
+    p 
+      font-size: 18px
+.dropdown-menu-selector
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding-left: 20px
+  border: 1px solid black
+  margin: 0px 20px 60px
+  height: 66%
+  overflow: auto
+.menu-selector-row
+  width: 100%
+  display: flex
+  p 
+    font-size: 18px

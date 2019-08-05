@@ -496,16 +496,38 @@
 .start-a-project .short-description p {
   font-size: 18px;
 }
-.start-a-project .drop-down {
-  margin: 40px;
+.start-a-project .drop-down-header {
+  margin: 20px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px black solid;
 }
-.start-a-project .drop-down .icon:hover {
+.start-a-project .drop-down-header .icon:hover {
   cursor: pointer;
+}
+.start-a-project .drop-down-header p {
+  font-size: 18px;
+}
+
+.dropdown-menu-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  border: 1px solid black;
+  margin: 0px 20px 60px;
+  height: 66%;
+  overflow: auto;
+}
+
+.menu-selector-row {
+  width: 100%;
+  display: flex;
+}
+.menu-selector-row p {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=App.css.map */

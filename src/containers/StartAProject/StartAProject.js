@@ -12,7 +12,7 @@ const StartAProject = () => {
     <div className="start-a-project">
         <PreviewTitle title={"Let's get you set up."}/>
         <ShortDescription description={"Pick a project category to connect with a specific community. You can always update this later."}/>
-        <div className="drop-down">
+        <div className="drop-down-header">
             <DropDownMenu 
               title={"Select your category"}
               toggleClick={toggleClick}
