@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const DropDownMenuSelectorRow = (props) => {
-  console.log('ddmsr props: ', props)
   return (
     <div 
       className="menu-selector-row"
