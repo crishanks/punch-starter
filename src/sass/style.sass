@@ -435,12 +435,28 @@ $libre-baskerville: 'Libre Baskerville', serif
 .start-a-project
   display: grid
   grid-template-columns: 1fr 50% 1fr
+  grid-template-rows: 10% 20% 20% 20% 1fr
   margin-top: 40px
   div
     grid-column: 2
-  .short-description p
-    font-size: 18px
+  .page-number
+    grid-column: 1
+    grid-row: 1
+    p
+      font-family: $roboto-light
+      font-weight: 600
+      font-size: 14px
+  .preview-title
+    grid-row: 2
+  .short-description 
+    grid-row: 3
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    p
+      font-size: 18px
   .drop-down-header
+    grid-row: 4
     position: relative
     margin: 20px
     padding: 0 20px
@@ -455,6 +471,7 @@ $libre-baskerville: 'Libre Baskerville', serif
       font-size: 16px
       font-weight: 600
   .dropdown-menu-selector
+    grid-row: 5
     display: flex
     flex-direction: column
     align-items: flex-start
@@ -464,6 +481,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     height: 305px
     margin-top: 202px
     margin-left: -20px
+    margin-bottom: 60px
     border: 1px solid black
     overflow: auto
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0)
@@ -480,6 +498,7 @@ $libre-baskerville: 'Libre Baskerville', serif
       cursor: pointer
       background-color: $gray-border
   .next-container
+    grid-row: 5
     display: flex
     align-items: center
     justify-content: space-between
@@ -487,10 +506,10 @@ $libre-baskerville: 'Libre Baskerville', serif
     padding-top: 20px
     margin-left: 20px
     margin-top: 60px
+    margin-bottom: 100px
     width: 91%
     .square-button
       width: 140px
       color: white
       &:hover
         cursor: pointer
-
