@@ -506,7 +506,7 @@
   border: 1px black solid;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
-.start-a-project .drop-down-header .icon:hover {
+.start-a-project .drop-down-header:hover {
   cursor: pointer;
 }
 .start-a-project .drop-down-header p {
@@ -555,6 +555,9 @@
 .start-a-project .next-container .square-button {
   width: 140px;
   color: white;
+}
+.start-a-project .next-container .square-button:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=App.css.map */
