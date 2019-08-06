@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 //Components
-import DropDownMenuSelector from './DropDownMenuSelector';
+import DropDownMenuSelectorRow from './DropDownMenuSelectorRow';
 
 //Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,10 +14,26 @@ const DropDownMenu = (props) => {
       <FontAwesomeIcon 
         className="icon" 
         icon={faChevronDown}
-        onClick={() => props.toggleDropDownClick(!props.dropDownClicked)}
       />
+      {
+        props.dropDownClicked ? (
+          <div className="dropdown-menu-selector">
+            {renderSelectorRows(props, ["Art", "Comics & Illustration", "Design & Tech", "Film", "Food & Craft", "Games", "Music", "Publishing"])}
+          </div>
+        ) : null
+      }
     </>
   );
+}
+
+const renderSelectorRows = (props, categories) => {
+  return categories.map(category => {
+    return <DropDownMenuSelectorRow 
+      category={category}
+      dropDownClicked={props.dropDownClicked}
+      toggleDropDownClick={props.toggleDropDownClick}
+    />
+  });
 }
 
 export default DropDownMenu;
