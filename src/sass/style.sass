@@ -455,27 +455,41 @@ $libre-baskerville: 'Libre Baskerville', serif
     p 
       font-size: 16px
       font-weight: 600
-.dropdown-menu-selector
-  display: flex
-  flex-direction: column
-  align-items: flex-start
-  position: absolute
-  z-index: 100
-  width: 100%
-  height: 305px
-  margin-top: 202px
-  margin-left: -20px
-  border: 1px solid black
-  overflow: auto
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0)
-.menu-selector-row
-  width: 97%
-  margin: 0 6px
-  display: flex
-  p 
-    font-size: 16px
-    font-weight: 600
-    padding-left: 12px
-  &:hover
-    cursor: pointer
-    background-color: $gray-border
+  .dropdown-menu-selector
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    position: absolute
+    z-index: 100
+    width: 100%
+    height: 305px
+    margin-top: 202px
+    margin-left: -20px
+    border: 1px solid black
+    overflow: auto
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0)
+    background-color: white
+  .menu-selector-row
+    width: 97%
+    margin: 0 6px
+    display: flex
+    p 
+      font-size: 16px
+      font-weight: 600
+      padding-left: 12px
+    &:hover
+      cursor: pointer
+      background-color: $gray-border
+  .next-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid $gray-border
+    padding-top: 20px
+    margin-left: 20px
+    margin-top: 60px
+    width: 91%
+    .square-button
+      width: 140px
+      color: white
+

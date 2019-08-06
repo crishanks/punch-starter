@@ -513,8 +513,7 @@
   font-size: 16px;
   font-weight: 600;
 }
-
-.dropdown-menu-selector {
+.start-a-project .dropdown-menu-selector {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -527,21 +526,35 @@
   border: 1px solid black;
   overflow: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0);
+  background-color: white;
 }
-
-.menu-selector-row {
+.start-a-project .menu-selector-row {
   width: 97%;
   margin: 0 6px;
   display: flex;
 }
-.menu-selector-row p {
+.start-a-project .menu-selector-row p {
   font-size: 16px;
   font-weight: 600;
   padding-left: 12px;
 }
-.menu-selector-row:hover {
+.start-a-project .menu-selector-row:hover {
   cursor: pointer;
   background-color: #e8e8e8;
+}
+.start-a-project .next-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-top: 60px;
+  width: 91%;
+}
+.start-a-project .next-container .square-button {
+  width: 140px;
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */

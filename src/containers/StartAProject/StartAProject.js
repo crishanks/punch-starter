@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import PreviewTitle from '../../components/Home/PreviewTitle';
 import ShortDescription from '../../components/Home/ShortDescription';
 import DropDownMenu from '../../components/StartAProject/DropDownMenu';
+import NextContainer from './NextContainer';
 
 const StartAProject = () => {
   const [dropDownClicked, toggleDropDownClick] = useState(false);
@@ -17,6 +18,9 @@ const StartAProject = () => {
             dropDownClicked={dropDownClicked}
             toggleDropDownClick={toggleDropDownClick}
           />
+        </div>
+        <div className="next-container">
+          <NextContainer blurb="Your first project! Welcome."/>
         </div>
     </div>
   );

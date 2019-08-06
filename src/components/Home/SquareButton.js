@@ -2,7 +2,7 @@ import React from 'react';
 
 const SquareButton = props => {
   return (
-    <div>{props.title}</div>
+    <div className="square-button">{props.title}</div>
   );
 }
 
