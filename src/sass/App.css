@@ -488,7 +488,7 @@
 .start-a-project {
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
-  grid-template-rows: 10% 20% 20% 20% 1fr;
+  grid-template-rows: 5% 20% 20% 20% 1fr;
   margin-top: 40px;
 }
 .start-a-project div {
@@ -505,12 +505,15 @@
 }
 .start-a-project .preview-title {
   grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .start-a-project .short-description {
   grid-row: 3;
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  padding: 0 40px;
 }
 .start-a-project .short-description p {
   font-size: 18px;
