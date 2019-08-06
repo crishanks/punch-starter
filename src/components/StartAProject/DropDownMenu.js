@@ -32,6 +32,7 @@ const renderSelectorRows = (props, categories) => {
       category={category}
       dropDownClicked={props.dropDownClicked}
       toggleDropDownClick={props.toggleDropDownClick}
+      key={category}
     />
   });
 }

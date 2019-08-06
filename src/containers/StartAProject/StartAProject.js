@@ -25,7 +25,11 @@ const StartAProject = () => {
         />
       </div>
       <div className="next-container">
-        <NextContainer blurb="Your first project! Welcome."/>
+        <NextContainer 
+          setPageNumber={setPageNumber} 
+          pageNumber={pageNumber}
+          blurb="Your first project! Welcome."
+        />
       </div>
     </div>
   );
