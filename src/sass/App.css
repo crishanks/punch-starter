@@ -550,8 +550,8 @@
   background-color: white;
 }
 .start-a-project .menu-selector-row {
-  width: 97%;
-  margin: 0 6px;
+  width: 98%;
+  margin: 5px 6px;
   display: flex;
 }
 .start-a-project .menu-selector-row p {

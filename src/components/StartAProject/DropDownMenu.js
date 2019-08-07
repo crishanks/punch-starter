@@ -18,7 +18,7 @@ const DropDownMenu = (props) => {
       {
         props.dropDownClicked ? (
           <div className="dropdown-menu-selector">
-            {renderSelectorRows(props, ["Art", "Comics & Illustration", "Design & Tech", "Film", "Food & Craft", "Games", "Music", "Publishing"])}
+            {renderSelectorRows(props)}
           </div>
         ) : null
       }
@@ -26,8 +26,8 @@ const DropDownMenu = (props) => {
   );
 }
 
-const renderSelectorRows = (props, categories) => {
-  return categories.map(category => {
+const renderSelectorRows = (props) => {
+  return props.categories.map(category => {
     return <DropDownMenuSelectorRow 
       category={category}
       dropDownClicked={props.dropDownClicked}
