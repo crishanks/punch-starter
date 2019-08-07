@@ -38,7 +38,7 @@ const StartAProject = () => {
             <NextContainer 
               setPageNumber={setPageNumber} 
               pageNumber={pageNumber}
-              blurb="Your first project! Welcome."
+              blurb="Your new project! Welcome."
               buttonTitle={"Next: Project idea"}
             />
           </div>

@@ -263,6 +263,10 @@
 .square-button div {
   color: #FFFFFF;
 }
+.square-button a {
+  color: white;
+  text-decoration: none;
+}
 
 .discover-container {
   display: flex;
@@ -586,6 +590,20 @@
   margin-top: 60px;
   margin-bottom: 100px;
   width: 94%;
+}
+.start-a-project .next-container .next-container-blurb {
+  width: 180px;
+}
+.start-a-project .next-container .next-container-blurb .previous-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.start-a-project .next-container .next-container-blurb .previous-button p {
+  padding-right: 80px;
+}
+.start-a-project .next-container .next-container-blurb .previous-button:hover {
+  cursor: pointer;
 }
 .start-a-project .next-container .square-button {
   width: 140px;
