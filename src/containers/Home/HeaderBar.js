@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 //Components
 import LinkButton from '../../components/Home/LinkButton';
@@ -8,7 +9,7 @@ import ProfileImage from '../../components/Home/ProfileImage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-export default class HeaderBar extends Component {
+class HeaderBar extends Component {
   constructor(props) {
     super(props)
   }
@@ -28,9 +29,24 @@ export default class HeaderBar extends Component {
             <p>Search</p>
             <FontAwesomeIcon className="icon" icon={faSearch}/>
           </div>
-          <ProfileImage className="profile-image" image={"https://img.jakpost.net/c/2018/11/28/2018_11_28_59557_1543397471._large.jpg"}/>
+          {this.props.loggedIn ? 
+            <ProfileImage className="profile-image" image={"https://img.jakpost.net/c/2018/11/28/2018_11_28_59557_1543397471._large.jpg"}/> : 
+            <div className="log-in-button, link-button">
+              <a href="/">Log in</a>
+            </div>
+          } 
         </div>
       </div>
     );
   }
 }
+
+//if state loggedIn is false, display login button. else, profile image
+
+const mapStateToProps = state => {
+  return {
+    loggedIn: state.loggedIn
+  }
+}
+
+export default connect(mapStateToProps)(HeaderBar);
