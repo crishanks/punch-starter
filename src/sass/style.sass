@@ -157,15 +157,13 @@ $libre-baskerville: 'Libre Baskerville', serif
 
 // Featured and Recommended Container
 .featured-recommended-container
-  display: flex
+  display: grid
+  grid-template-columns: 60% 1fr
   padding: 20px 60px
   margin: 20px 0
   font-family: $roboto-light
   .featured-project-container
-    flex-grow: 2
-    display: flex
-    flex-wrap: wrap
-    justify-content: flex-start
+    grid-column: 1
     padding: 2rem
     .section-header
       margin-bottom: 20px
@@ -183,11 +181,9 @@ $libre-baskerville: 'Libre Baskerville', serif
           font-family: $libre-baskerville
           font-size: 18px
   .recommended-container
-    flex: 0 0 auto
-    display: flex
-    flex-wrap: wrap
-    justify-content: flex-start
-    padding: 2rem 0 0 3.5rem
+    grid-column: 2
+    justify-self: end
+    padding-left: 10%
     border-left: 1px solid $gray-border
     .section-header
       display: flex

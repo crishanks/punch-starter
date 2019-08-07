@@ -41,8 +41,6 @@ class HeaderBar extends Component {
   }
 }
 
-//if state loggedIn is false, display login button. else, profile image
-
 const mapStateToProps = state => {
   return {
     loggedIn: state.loggedIn
