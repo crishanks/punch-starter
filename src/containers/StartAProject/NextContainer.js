@@ -9,11 +9,9 @@ const NextContainer = (props) => {
       <div className="next-container-blurb">
         <p>{props.blurb}</p>
       </div>
-      <SquareButton 
-        title={"Next: Project idea"} 
-        pageNumber={props.pageNumber}
-        setPageNumber={props.setPageNumber}
-      />
+      <div className="button-container" onClick={(props) => props.setPageNumber(props.pageNumber++)}>
+        <SquareButton title={"Next: Project idea"} />
+      </div>
     </>
   );
 }
