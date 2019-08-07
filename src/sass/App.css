@@ -592,7 +592,7 @@
   width: 94%;
 }
 .start-a-project .next-container .next-container-blurb {
-  width: 180px;
+  width: 200px;
 }
 .start-a-project .next-container .next-container-blurb .previous-button {
   display: flex;
@@ -600,7 +600,7 @@
   align-items: center;
 }
 .start-a-project .next-container .next-container-blurb .previous-button p {
-  padding-right: 80px;
+  padding-right: 90px;
 }
 .start-a-project .next-container .next-container-blurb .previous-button:hover {
   cursor: pointer;

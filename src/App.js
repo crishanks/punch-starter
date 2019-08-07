@@ -10,6 +10,7 @@ import { logIn, logOut } from './actions/userActions';
 import Home from '../src/containers/Home/Home';
 import HeaderBar from '../src/containers/Home/HeaderBar';
 import StartAProject from './containers/StartAProject/StartAProject';
+import LogInSignUp from './containers/LogInSignUp/LogInSignUp';
 
 const App = (props) => {
   return (
@@ -18,6 +19,7 @@ const App = (props) => {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/start' component={StartAProject}/>
+        <Route exact path='/login' comonent={LogInSignUp}/>
       </Switch>
     </div>
   );

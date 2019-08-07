@@ -20,7 +20,7 @@ const NextContainer = (props) => {
       {
         props.pageNumber === 3 ? 
         <div className="button-container">
-          <SquareButton title={props.buttonTitle} link={"/"}/>
+          <SquareButton title={props.buttonTitle} link={"/login"}/>
         </div>
         : 
         <div className="button-container" onClick={() => props.setPageNumber(goToNextPage(props))}>

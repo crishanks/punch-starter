@@ -27,7 +27,7 @@ const HeaderBar = (props) => {
         {props.loggedIn ? 
           <ProfileImage className="profile-image" image={"https://img.jakpost.net/c/2018/11/28/2018_11_28_59557_1543397471._large.jpg"}/> : 
           <div className="log-in-button, link-button">
-            <a href="/">Log in</a>
+            <a href="/login">Log in</a>
           </div>
         } 
       </div>
