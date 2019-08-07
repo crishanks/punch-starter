@@ -508,6 +508,7 @@
 .start-a-project .short-description {
   grid-row: 3;
   display: flex;
+  justify-content: center;
   align-items: flex-start;
   padding: 0 40px;
 }
@@ -563,6 +564,17 @@
   cursor: pointer;
   background-color: #e8e8e8;
 }
+.start-a-project .text-input-box {
+  grid-row: 4;
+}
+.start-a-project .text-input-box form {
+  height: 80px;
+}
+.start-a-project .text-input-box .character-counter {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+}
 .start-a-project .next-container {
   grid-row: 5;
   display: flex;
@@ -573,7 +585,7 @@
   margin-left: 20px;
   margin-top: 60px;
   margin-bottom: 100px;
-  width: 91%;
+  width: 94%;
 }
 .start-a-project .next-container .square-button {
   width: 140px;

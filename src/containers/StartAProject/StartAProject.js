@@ -47,13 +47,13 @@ const StartAProject = () => {
     } else if (pageNumber === 2) {
       return (
         <>
-          <PreviewTitle title={"Let's get you set up."}/>
-          <ShortDescription description={"Pick a project category to connect with a specific community. You can always update this later."}/>
+          <PreviewTitle title={"Describe what you'll be creating."}/>
+          <ShortDescription description={"And don't worry, you can edit this later, too."}/>
           <div className="text-input-box">
             <TextInputBox
               maxLength={"135"}
-              cols={"90"}
-              rows={"8"}
+              cols={"90"} 
+              rows={"5"}
             />
           </div>
           <div className="next-container">
@@ -69,11 +69,11 @@ const StartAProject = () => {
     } else if (pageNumber === 3) {
       return (
         <>
-          <PreviewTitle title={"Let's get you set up."}/>
-          <ShortDescription description={"Pick a project category to connect with a specific community. You can always update this later."}/>
+          <PreviewTitle title={"Finally, let's confirm your eligibility."}/>
+          <ShortDescription description={"Tell us where you're based and confirm a few other details before we proceed."}/>
           <div className="drop-down-header" onClick={() => toggleDropDownClick(!dropDownClicked)}>
             <DropDownMenu 
-              title={"Select your category"}
+              title={"Select your country"}
               dropDownClicked={dropDownClicked}
               toggleDropDownClick={toggleDropDownClick}
               categories={["United States", "Great Britain", "Australia", "Mexico", "Paraguay", "Russia"]}

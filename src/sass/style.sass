@@ -450,6 +450,7 @@ $libre-baskerville: 'Libre Baskerville', serif
   .short-description 
     grid-row: 3
     display: flex
+    justify-content: center
     align-items: flex-start
     padding: 0 40px
     p
@@ -496,6 +497,14 @@ $libre-baskerville: 'Libre Baskerville', serif
     &:hover
       cursor: pointer
       background-color: $gray-border
+  .text-input-box
+    grid-row: 4
+    form
+      height: 80px
+    .character-counter
+      display: flex
+      justify-content: flex-end
+      padding-right: 24px
   .next-container
     grid-row: 5
     display: flex
@@ -506,7 +515,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     margin-left: 20px
     margin-top: 60px
     margin-bottom: 100px
-    width: 91%
+    width: 94%
     .square-button
       width: 140px
       color: white
