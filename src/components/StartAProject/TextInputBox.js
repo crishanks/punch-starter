@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TextInputBox = () => {
+const TextInputBox = (props) => {
   const [characterCount, setCharacterCount] = useState(0);
   const [textInput, setTextInput] = useState('');
 
@@ -10,8 +10,9 @@ const TextInputBox = () => {
       <textarea 
           name="input-box" 
           id="input-box" 
-          cols="20" 
-          rows="20"
+          cols={props.cols} 
+          rows={props.rows}
+          maxLength={props.maxLength}
           onKeyDown={(event) => updateTextInput(event)}
         >
         {textInput}
@@ -24,7 +25,6 @@ const TextInputBox = () => {
   );
 
   function updateTextInput(event) {
-    console.log(event.keyCode)
     let newCharacterCount = characterCount;
 
     if (characterCount < 135 && event.keyCode !== 8) {

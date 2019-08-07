@@ -50,7 +50,11 @@ const StartAProject = () => {
           <PreviewTitle title={"Let's get you set up."}/>
           <ShortDescription description={"Pick a project category to connect with a specific community. You can always update this later."}/>
           <div className="text-input-box">
-            <TextInputBox/>
+            <TextInputBox
+              maxLength={"135"}
+              cols={"90"}
+              rows={"8"}
+            />
           </div>
           <div className="next-container">
             <NextContainer 
