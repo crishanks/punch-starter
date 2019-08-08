@@ -50,7 +50,7 @@ const HeaderBar = (props) => {
   );
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     loggedIn: state.loggedIn
   }

@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 
 //Redux
 import { connect } from 'react-redux';
-import { logIn, logOut } from './actions/userActions';
 
 //Components
 import Home from '../src/containers/Home/Home';
@@ -32,11 +31,4 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    logIn: () => dispatch(logIn()),
-    logOut: () => dispatch(logOut())
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);
