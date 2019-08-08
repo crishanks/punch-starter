@@ -378,13 +378,12 @@
   width: 542px;
   height: 222px;
 }
-.featured-authors-container .dotted-border .featured-author-content-container {
-  position: absolute;
-}
 .featured-authors-container .dotted-border .featured-author-content-container:nth-child(-n+4) {
+  position: absolute;
   top: -60px;
 }
 .featured-authors-container .dotted-border .featured-author-content-container:nth-child(n+4) {
+  position: absolute;
   top: 160px;
 }
 .featured-authors-container .dotted-border .featured-author-content-container:nth-child(1) {
