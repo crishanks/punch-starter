@@ -11,7 +11,7 @@ const PublicationBlurb = props => {
       <p>{props.description}</p>
       <div className="basic-link">
         <BasicLink
-          title={props.link}
+          basicLinkTitle={props.basicLinkTitle}
           link={props.link}
         />
       </div>
