@@ -5,7 +5,7 @@ import LoginContainer from '../../components/LogInSignUp/LoginContainer';
 
 const LogInSignUp = props => {
   return (
-    <div className="login-container">
+    <div className="login-signup-container">
       <LoginContainer/>
     </div>
   );

@@ -9,23 +9,29 @@ import BasicLink from '../../components/Home/BasicLink';
 
 const LoginContainer = props => {
   return (
-    <>
-      <PreviewTitle title={"Log in"}/>
-      <ShortTextInputBox
-        cols={"40"}
-        rows={"2"}
-        placeholder={"Email"}
-      />
-      <ShortTextInputBox
-        cols={"40"}
-        rows={"2"}
-        placeholder={"Password"}
-      />
-      <SquareButton title={"Log in"} link={"/"}/>
-      <ShortDescription description={"New to Kickstarter?"}/>
-      <BasicLink link={"/signup"} title={"Sign up"}/>
-      <ShortDescription description={"Punchstarter is protected by Google Privacy Policy and Terms of Service apply."}/>
-    </>
+    <div className="login-container">
+      <div className="login-upper-content">
+        <PreviewTitle title={"Log in"}/>
+        <ShortTextInputBox
+          cols={"40"}
+          rows={"2"}
+          placeholder={"Email"}
+        />
+        <ShortTextInputBox
+          cols={"40"}
+          rows={"2"}
+          placeholder={"Password"}
+        />
+        <SquareButton title={"Log in"} link={"/"}/>
+      </div>
+      <div className="login-bottom-content">
+        <div className="signup-link-container">
+          <ShortDescription description={"New to Kickstarter?"}/>
+          <BasicLink link={"/signup"} title={"Sign up"}/>
+        </div>
+        <ShortDescription description={"Punchstarter is protected by Google Privacy Policy and Terms of Service apply."}/>
+      </div>
+    </div>
   );
 }
 

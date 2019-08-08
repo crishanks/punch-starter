@@ -613,16 +613,55 @@
   cursor: pointer;
 }
 
-.login-container {
+.login-signup-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 90vh;
   background-color: #f7f7f6;
 }
-.login-container > * {
+.login-signup-container > * {
   grid-column: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.login-signup-container .login-container {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  margin: 40px 0 40px 0;
+  padding: 20px 0;
+  background-color: white;
+  border-radius: 5px;
+}
+.login-signup-container .login-container .login-upper-content {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.login-signup-container .login-container .login-upper-content .square-button {
+  background-color: #256EFF;
+  width: 62%;
+}
+.login-signup-container .login-container .login-bottom-content {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 60px 20px 60px;
+  height: 100%;
+  border-top: 1px solid #e8e8e8;
+}
+.login-signup-container .login-container .login-bottom-content .signup-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-signup-container .login-container .login-bottom-content .signup-link-container a {
+  color: #256EFF;
 }
 
 /*# sourceMappingURL=App.css.map */

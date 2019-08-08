@@ -537,12 +537,46 @@ $libre-baskerville: 'Libre Baskerville', serif
         cursor: pointer
 
 //Login Sign Up
-.login-container
+.login-signup-container
   display: grid
   grid-template-columns: 1fr 1fr 1fr
+  height: 90vh
   background-color: $off-white
   > *
     grid-column: 2
     display: flex
     justify-content: center
     align-items: center
+  .login-container
+    display: grid
+    grid-template-rows: 60% 40%
+    margin: 40px 0 40px 0
+    padding: 20px 0
+    background-color: white
+    border-radius: 5px
+    .login-upper-content
+      grid-row: 1
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-evenly
+      height: 100%
+      .square-button
+        background-color: $blue
+        width: 62%
+    .login-bottom-content
+      grid-row: 2
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+      margin: 50px 60px 20px 60px
+      height: 100%
+      border-top: 1px solid $gray-border
+      .signup-link-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        a
+          color: $blue
+        
