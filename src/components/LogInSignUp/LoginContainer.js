@@ -12,7 +12,6 @@ import ShortDescription from '../../components/Home/ShortDescription';
 import BasicLink from '../../components/Home/BasicLink';
 
 const LoginContainer = props => {
-  console.log('LoginContainer Props: ', props)
   return (
     <div className="login-container">
       <div className="login-upper-content">
@@ -31,7 +30,7 @@ const LoginContainer = props => {
       </div>
       <div className="login-bottom-content">
         <div className="signup-link-container">
-          <ShortDescription description={"New to Kickstarter?"}/>
+          <ShortDescription description={"New to Punchstarter?"}/>
           <BasicLink link={"/signup"} title={"Sign up"}/>
         </div>
         <ShortDescription description={"Punchstarter is protected by Google Privacy Policy and Terms of Service apply."}/>

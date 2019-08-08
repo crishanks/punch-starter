@@ -11,7 +11,7 @@ import HeaderBar from '../src/containers/Home/HeaderBar';
 import StartAProject from './containers/StartAProject/StartAProject';
 import LogInSignUp from './containers/LogInSignUp/LogInSignUp';
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="App">
       <HeaderBar/>

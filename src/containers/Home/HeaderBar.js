@@ -12,7 +12,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const HeaderBar = (props) => {
   const [showProfileDropDownMenu, toggleShowProfileDropDownMenu] = useState(false);
-  console.log('header props: ', props)
+
   return (
     <div className="header-bar">
       <div className="header-link-buttons">
@@ -50,9 +50,9 @@ const HeaderBar = (props) => {
   );
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    loggedIn: state.loggedIn
+    loggedIn: state.userReducer.loggedIn
   }
 }
 
