@@ -3,6 +3,7 @@ $blue: #256EFF
 $green: #61e786
 $forest-green: #0f7262
 $black: #333745
+$off-white: #f7f7f6
 $gray-border: #e8e8e8
 $gray: #656969
 $roboto-light: 'Roboto', sans-serif
@@ -534,3 +535,14 @@ $libre-baskerville: 'Libre Baskerville', serif
       color: white
       &:hover
         cursor: pointer
+
+//Login Sign Up
+.login-container
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  background-color: $off-white
+  > *
+    grid-column: 2
+    display: flex
+    justify-content: center
+    align-items: center

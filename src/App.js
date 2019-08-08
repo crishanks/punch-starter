@@ -19,7 +19,7 @@ const App = (props) => {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/start' component={StartAProject}/>
-        <Route exact path='/login' comonent={LogInSignUp}/>
+        <Route exact path='/login' component={LogInSignUp}/>
       </Switch>
     </div>
   );

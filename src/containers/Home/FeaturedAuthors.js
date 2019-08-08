@@ -14,7 +14,7 @@ const FeaturedAuthors = (props) => {
           image={"https://ui-ex.com/images/swirl-transparent-3.png"}
           title={"The Creative Independent"}
           description={"A growing resource of emotional and practical guidance for creative people."}
-          linkTitle={"Visit The Creative Independent"}
+          link={"Visit The Creative Independent"}
           link={"/"}
         />
       </div> : null

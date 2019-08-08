@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TextInputBox = (props) => {
+const LongTextInputBox = (props) => {
   const [characterCount, setCharacterCount] = useState(0);
   const [textInput, setTextInput] = useState('');
 
@@ -37,4 +37,4 @@ const TextInputBox = (props) => {
   }
 }
 
-export default TextInputBox;
+export default LongTextInputBox;

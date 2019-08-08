@@ -613,4 +613,16 @@
   cursor: pointer;
 }
 
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f7f7f6;
+}
+.login-container > * {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=App.css.map */

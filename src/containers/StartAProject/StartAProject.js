@@ -5,7 +5,7 @@ import PreviewTitle from '../../components/Home/PreviewTitle';
 import ShortDescription from '../../components/Home/ShortDescription';
 import DropDownMenu from '../../components/StartAProject/DropDownMenu';
 import NextContainer from './NextContainer';
-import TextInputBox from'../../components/StartAProject/TextInputBox';
+import LongTextInputBox from'../../components/StartAProject/LongTextInputBox';
 
 const StartAProject = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -50,7 +50,7 @@ const StartAProject = () => {
           <PreviewTitle title={"Describe what you'll be creating."}/>
           <ShortDescription description={"And don't worry, you can edit this later, too."}/>
           <div className="text-input-box">
-            <TextInputBox
+            <LongTextInputBox
               maxLength={"135"}
               cols={"90"} 
               rows={"5"}

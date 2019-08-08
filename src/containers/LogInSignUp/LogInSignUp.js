@@ -1,8 +1,13 @@
 import React from 'react';
 
+//Components
+import LoginContainer from '../../components/LogInSignUp/LoginContainer';
+
 const LogInSignUp = props => {
   return (
-    <div></div>
+    <div className="login-container">
+      <LoginContainer/>
+    </div>
   );
 }
 
