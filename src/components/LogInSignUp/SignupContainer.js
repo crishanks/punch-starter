@@ -32,7 +32,7 @@ const SignupContainer = props => {
       <div className="signup-bottom-content">
         <div className="signup-link-container">
           <ShortDescription description={"Already have an account?"}/>
-          <BasicLink link={"/login"} title={"Log in"}/>
+          <BasicLink link={"/login"} basicLinkTitle={"Log in"}/>
         </div>
       </div>
     </div>

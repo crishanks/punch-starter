@@ -31,7 +31,7 @@ const LoginContainer = props => {
       <div className="login-bottom-content">
         <div className="signup-link-container">
           <ShortDescription description={"New to Punchstarter?"}/>
-          <BasicLink link={"/signup"} title={"Sign up"}/>
+          <BasicLink link={"/signup"} basicLinkTitle={"Sign up"}/>
         </div>
         <ShortDescription description={"Punchstarter is protected by Google Privacy Policy and Terms of Service apply."}/>
       </div>
