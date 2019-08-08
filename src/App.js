@@ -20,6 +20,7 @@ const App = (props) => {
         <Route exact path='/' component={Home}/>
         <Route exact path='/start' component={StartAProject}/>
         <Route exact path='/login' component={LogInSignUp}/>
+        <Route exact path='/signup' component={LogInSignUp}/>
       </Switch>
     </div>
   );
