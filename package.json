@@ -1,5 +1,6 @@
 {
   "name": "punch-starter",
+  "homepage": "http://punchstart.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "App.js",
+  "repository": "https://github.com/crishanks/punch-starter.git",
+  "author": "<github username> <crishanks12@gmail.com>",
+  "license": "MIT"
 }
