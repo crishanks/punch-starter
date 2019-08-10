@@ -146,9 +146,16 @@
   }
 
   .feature-project-component-container {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .feature-project-component-container .project-preview-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-project-component-container .project-preview-container .preview-image {
+    width: 98%;
   }
 
   .recommended-component-container {
@@ -156,6 +163,14 @@
   }
   .recommended-component-container .numbered-selector {
     justify-self: flex-end;
+  }
+  .recommended-component-container .project-preview-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 30% 1fr 10%;
+    grid-column-gap: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 1.2rem 0rem;
   }
 
   .featured-recommended-container {
@@ -167,7 +182,7 @@
   }
   .featured-recommended-container .featured-project-container {
     grid-column: 1;
-    padding: 2rem;
+    padding: 0 2rem;
   }
   .featured-recommended-container .featured-project-container .section-header {
     margin-bottom: 20px;
@@ -214,21 +229,12 @@
   .featured-recommended-container .recommended-container .numbered-selector div:hover, .featured-recommended-container .recommended-container .numbered-selector .arrow:hover {
     cursor: pointer;
   }
-  .featured-recommended-container .recommended-container .project-preview-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 30% 1fr 10%;
-    grid-column-gap: 20px;
-    width: 100%;
-    border-bottom: 1px solid #e8e8e8;
-    padding: 1.2rem 0rem;
-  }
   .featured-recommended-container .recommended-container .preview-image {
     grid-row: 1/4;
     grid-column: 1;
-    width: 100%;
     object-fit: cover;
-    max-width: 110px;
+    max-width: 100%;
+    height: 100%;
   }
   .featured-recommended-container .recommended-container .project-preview-content {
     grid-row: 1/4;
