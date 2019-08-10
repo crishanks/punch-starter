@@ -147,11 +147,15 @@ $libre-baskerville: 'Libre Baskerville', serif
     display: flex
     flex-direction: column
     align-items: flex-start
+    width: 97%
+    border-right: 1px solid $gray-border
     .project-preview-container
       display: flex
       flex-direction: column
+      padding-right: 40px
       .preview-image
         width: 98%
+        
 
   .recommended-component-container
     width: 100%
@@ -193,8 +197,6 @@ $libre-baskerville: 'Libre Baskerville', serif
     .recommended-container
       grid-column: 2
       justify-self: end
-      padding-left: 10%
-      border-left: 1px solid $gray-border
       .section-header
         display: flex
         justify-content: flex-start
@@ -291,6 +293,7 @@ $libre-baskerville: 'Libre Baskerville', serif
       grid-row: 2
       display: flex
       flex-direction: column
+      object-fit: cover
       img
         max-width: 267px
       .project-preview-content
