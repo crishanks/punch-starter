@@ -905,6 +905,9 @@
     margin: 40px 0;
     font-family: "Roboto", sans-serif;
   }
+  .featured-recommended-container .featured-project-container {
+    margin-bottom: 60px;
+  }
   .featured-recommended-container .featured-project-container .section-header {
     margin-bottom: 20px;
   }
@@ -1175,25 +1178,26 @@
     margin-left: 60px;
   }
   .more-to-explore-container .project-preview-containers-container {
-    margin: 20px 40px 20px 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
   .more-to-explore-container .project-preview-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     text-align: left;
+    margin-bottom: 40px;
   }
   .more-to-explore-container .project-preview-container img {
     max-width: 250px;
     max-height: 360px;
   }
   .more-to-explore-container .project-preview-container .project-preview-content {
-    width: 90%;
+    width: 50%;
   }
   .more-to-explore-container .project-preview-container .project-preview-content p {
     font-family: "Libre Baskerville", serif;

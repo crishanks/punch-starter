@@ -786,6 +786,7 @@ $libre-baskerville: 'Libre Baskerville', serif
     margin: 40px 0
     font-family: $roboto-light
     .featured-project-container
+      margin-bottom: 60px
       .section-header
         margin-bottom: 20px
       img
@@ -1010,22 +1011,23 @@ $libre-baskerville: 'Libre Baskerville', serif
       justify-content: flex-start
       margin-left: 60px
     .project-preview-containers-container
-      margin: 20px 40px 20px 60px
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr 1fr
-      grid-template-rows: 1fr
-      grid-gap: 20px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-top: 40px
     .project-preview-container
       display: flex
       flex-direction: column
-      justify-content: space-evenly
-      align-items: flex-start
+      justify-content: center
+      align-items: center
       text-align: left
+      margin-bottom: 40px
       img
         max-width: 250px
         max-height: 360px
       .project-preview-content
-        width: 90%
+        width: 50%
         p
           font-family: $libre-baskerville
           font-size: 16px
