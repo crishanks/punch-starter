@@ -1025,7 +1025,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px 40px 0 70px;
+    padding: 20px 40px 20px 70px;
     border-bottom: 1px solid #e8e8e8;
   }
   .fresh-favorites-container .section-header {
@@ -1041,6 +1041,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .fresh-favorites-container .project-preview-container img {
     max-width: 267px;
@@ -1060,13 +1061,11 @@
   }
 
   .featured-authors-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 33% 1fr;
-    align-items: flex-start;
-    justify-items: start;
-    margin-top: 140px;
-    grid-column-gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
     border-bottom: 1px solid #e8e8e8;
   }
   .featured-authors-container img {
@@ -1096,45 +1095,44 @@
   }
   .featured-authors-container .dotted-border {
     position: relative;
-    margin-left: 95px;
+    margin: 130px 15%;
     border: 1px dashed;
     z-index: -1;
-    width: 542px;
-    height: 222px;
+    width: 300px;
+    height: 750px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(-n+4) {
     position: absolute;
-    top: -60px;
+    left: -62px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(n+4) {
     position: absolute;
-    top: 160px;
+    left: 125px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(1) {
-    left: 20px;
+    top: -75px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(2) {
-    right: 120px;
+    top: 200px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(3) {
-    right: -98px;
+    top: 475px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(4) {
-    right: 420px;
+    top: 95px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(5) {
-    right: 185px;
+    top: 370px;
   }
   .featured-authors-container .dotted-border .featured-author-content-container:nth-child(6) {
-    right: -30px;
+    top: 645px;
   }
   .featured-authors-container .publication-blurb {
-    grid-row: 1/3;
     display: flex;
     flex-direction: column;
     text-align: start;
     width: 320px;
-    margin-left: 95px;
+    margin: 0 50px;
   }
   .featured-authors-container .publication-blurb img {
     width: 90px;
