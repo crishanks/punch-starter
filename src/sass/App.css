@@ -1052,14 +1052,14 @@
   .fresh-favorites-container .project-preview-container .project-preview-content {
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 50%;
   }
   .fresh-favorites-container .project-preview-container .preview-title h1 {
-    text-align: start;
+    text-align: center;
     font-size: 18px;
   }
   .fresh-favorites-container .project-preview-container .short-description p {
-    text-align: start;
+    text-align: center;
     font-family: "Libre Baskerville", serif;
   }
 
