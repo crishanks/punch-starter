@@ -883,31 +883,29 @@ $libre-baskerville: 'Libre Baskerville', serif
 
   // Fresh Favorites
   .fresh-favorites-container
-    display: grid
-    grid-template-rows: 10% 1fr
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    padding: 20px 50px 0 50px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 20px 40px
     border-bottom: 1px solid $gray-border
     .section-header
-      grid-row: 1
-      grid-column: 1
       display: flex
+      width: 100%
       justify-content: flex-start
       align-items: center
       margin-bottom: 30px
       margin-top: 10px
     .project-preview-container 
-      grid-row: 2
       display: flex
+      justify-content: center
+      align-items: center
       flex-direction: column
-      object-fit: cover
       img
         max-width: 267px
       .project-preview-content
         display: flex
         flex-direction: column
-        align-items: flex-start
-        margin-right: 20px
+        width: 65%
       .preview-title h1
         text-align: start
         font-size: 18px
