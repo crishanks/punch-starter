@@ -703,6 +703,16 @@
     width: 100%;
     margin-top: 25px;
   }
+  .login-signup-container .signup-container .signup-upper-content input {
+    width: 100%;
+    height: 20px;
+  }
+  .login-signup-container .signup-container .signup-upper-content button {
+    color: white;
+  }
+  .login-signup-container .signup-container .signup-upper-content button:hover {
+    cursor: pointer;
+  }
   .login-signup-container .signup-container .signup-bottom-content {
     grid-row: 2;
     display: flex;
